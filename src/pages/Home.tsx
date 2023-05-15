@@ -1,6 +1,8 @@
+import PriceTable from "../components/PriceTable"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <PriceTable/>
   )
 }
 
