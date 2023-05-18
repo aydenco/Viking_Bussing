@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/custom/Navbar';
 import routes from './config/routes';
 import { Provider } from 'react-redux';
@@ -8,7 +8,7 @@ function App() {
   
   return (
     <div className='bg-sky flex-inline flex-column h-screen'>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar />
       <Provider store={store}>
         <Routes>
@@ -23,7 +23,7 @@ function App() {
           )) }
         </Routes>
       </Provider>
-      </BrowserRouter>
+      </HashRouter>
       </div>
   )
 }
