@@ -60,8 +60,12 @@ function Navbar() {
                         </Link>
                     </div>
                 </Button>
-                <LoginButton></LoginButton>
+                <div className='bg-teal flex place-items-center mt-0 lg:inline-block lg:mt-0 text-gold font-bold ml-2 mr-2 hover:text-white w-20 p-3 rounded-xl'>
+                    <LoginButton></LoginButton>
+                </div>
+                <div className='bg-teal flex place-items-center mt-0 lg:inline-block lg:mt-0 text-gold font-bold ml-2 mr-2 hover:text-white w-20 p-3 rounded-xl'>
                 <LogoutButton></LogoutButton>
+                </div>
             </div>
         </div>
     </nav>
