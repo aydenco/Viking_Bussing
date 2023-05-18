@@ -1,9 +1,9 @@
-import FaqAccordion from "../components/Accordion"
+import FAQAccordion from "../components/mui/Accordion"
 
 const FAQs = () => {
   return (
-    <div>
-      <FaqAccordion></FaqAccordion>
+    <div className=''>
+      <FAQAccordion></FAQAccordion>
     </div>
   )
 }

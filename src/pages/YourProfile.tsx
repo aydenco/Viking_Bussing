@@ -1,7 +1,7 @@
-import DataTable from "../components/DataTable"
+import DataTable from "../components/mui/DataTable"
 const YourProfile = () => {
   return (
-    <div>
+    <div className='flex'>
       <DataTable />
     </div>
   )

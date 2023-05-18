@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
-import LoginButton from '../custom-hooks/LoginButton';
-import LogoutButton from '../custom-hooks/LogoutButton';
+import LoginButton from '../auth0/LoginButton';
+import LogoutButton from '../auth0/LogoutButton';
 
 // TODO: Change tab names and color scheme, fix auth system
 

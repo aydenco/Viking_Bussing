@@ -2,9 +2,9 @@ import Button from "./Button";
 import Input from "./Input";
 
 import { useForm } from 'react-hook-form';
-import { server_calls } from "../api/server";
+import { server_calls } from "../../api/server";
 import { useDispatch, useStore } from "react-redux";
-import { chooseCard_number, chooseExpiration_date, chooseCvv, chooseName, chooseZip_code } from "../redux/slices/RootSlice";
+import { chooseCard_number, chooseExpiration_date, chooseCvv, chooseName, chooseZip_code } from "../../redux/slices/RootSlice";
 
 interface CardFormProps {
   id?: string[]
@@ -37,8 +37,7 @@ export const CardForm = (props:CardFormProps) => {
 
   return (
 
-    <div className='fixed w-full h-full flex overflow-auto z-1
-    justify-center align-middle bg-sky bg-opacity-25'>
+    <div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label htmlFor="card_number">Card Number</label>
@@ -62,7 +61,7 @@ export const CardForm = (props:CardFormProps) => {
         </div>
         <div className="flex p-1">
           <Button
-            className="flex justify-start m-3 bg-navy p-2 rounded hover:bg-slate-800 text-white"
+            className="flex justify-start m-3 bg-gold p-2 rounded hover:bg-navy text-teal hover:text-white font-semibold"
           >
             Submit
           </Button>

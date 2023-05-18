@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { server_calls } from "../api/server";
 
  export const useGetData = () => {
-    const [ vehicleData, setData ] = useState<[]>([])
+    const [ cardData, setData ] = useState<[]>([])
     
     async function handleDataFetch(){
         const result = await server_calls.get();
@@ -14,5 +14,5 @@ import { server_calls } from "../api/server";
         handleDataFetch();
     }, [])
 
-    return { vehicleData, getData:handleDataFetch }
+    return { cardData, getData:handleDataFetch }
 }

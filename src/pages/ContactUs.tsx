@@ -1,6 +1,12 @@
+import Feedback from "../components/mui/Feedback"
+
+
 const ContactUs = () => {
+
   return (
-    <div>ContactUs</div>
+    <div className="inline-flex h-screen w-screen justify-center">
+    <Feedback/>
+    </div>
   )
 }
 

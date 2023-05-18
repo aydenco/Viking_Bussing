@@ -1,4 +1,5 @@
 import { styled } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
@@ -9,11 +10,12 @@ import Paper from '@mui/material/Paper';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
-    color: theme.palette.common.white,
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.background.paper,
+    fontSize: 20,
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
+    fontSize: 20,
   },
 }));
 
@@ -44,6 +46,7 @@ const rows = [
 
 export default function PriceTable() {
   return (
+    <div className='flex-inline'>
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="Price table">
         <TableHead>
@@ -68,5 +71,6 @@ export default function PriceTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    </div>
   );
 }

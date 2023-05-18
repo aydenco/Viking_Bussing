@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function ControlledAccordions() {
+export default function FAQAccordion() {
   const [expanded, setExpanded] = React.useState<string | false>(false);
 
   const handleChange =
@@ -14,7 +14,7 @@ export default function ControlledAccordions() {
     };
 
     return (
-        <div>
+        <div className='bg-sky'>
           <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
             >
               <Typography>How much does it cost?</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails sx={{color:'primary.main'}}>
               <Typography variant= 'inherit'>
                 An arm and a leg. Read the prices list. Smh
               </Typography>
@@ -37,7 +37,7 @@ export default function ControlledAccordions() {
             >
               <Typography>How long do I have to get to the bus stop?</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails sx={{color:'primary.main'}}>
               <Typography>
                 Learn time management and this won't be a problem
               </Typography>
@@ -51,7 +51,7 @@ export default function ControlledAccordions() {
             >
               <Typography>Are Pets Allowed?</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails sx={{color:'primary.main'}}>
               <Typography>
                 Only service animals and Little Sebastian are allowed on our busses.
               </Typography>
@@ -65,7 +65,7 @@ export default function ControlledAccordions() {
             >
               <Typography>Is there a dress code?</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails sx={{color:'primary.main'}}>
               <Typography>
                 Formal or Semi-Formal Attire are acceptable. You will not be admitted if you are wearing jorts. We will not be expanding on this.
               </Typography>
@@ -79,7 +79,7 @@ export default function ControlledAccordions() {
             >
               <Typography>Can my friend use my pass?</Typography>
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails sx={{color:'primary.main'}}>
               <Typography>
                 Can I use your Social Security Card?
               </Typography>
