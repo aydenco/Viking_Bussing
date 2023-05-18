@@ -4,8 +4,6 @@ import Button from './Button';
 import LoginButton from '../auth0/LoginButton';
 import LogoutButton from '../auth0/LogoutButton';
 
-// TODO: Change tab names and color scheme, fix auth system
-
 function Navbar() {
     const [isVisible, setIsVisible] = useState(false)
 

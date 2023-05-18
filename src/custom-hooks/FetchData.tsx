@@ -1,4 +1,3 @@
-// TODO: Do I need this
 import { useEffect, useState } from "react";
 import { server_calls } from "../api/server";
 

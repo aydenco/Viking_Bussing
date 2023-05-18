@@ -3,7 +3,7 @@ import BusRoutes from '../pages/BusRoutes';
 import ContactUs from '../pages/ContactUs';
 import FAQs from '../pages/FAQs';
 import YourProfile from '../pages/YourProfile';
-// TODO: Change pages
+
 interface RouteType {
     path: string,
     component: () => JSX.Element,

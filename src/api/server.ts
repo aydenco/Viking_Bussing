@@ -1,4 +1,4 @@
-const token = 'd25660bb08761ff0b01ae81418da64d384464ebfc4f46fa3'
+const token = 'acdd36dbd27a6abdf5c359130430c81b6b97b9c4cf6dd8ca'
 
 
 export const server_calls = {
